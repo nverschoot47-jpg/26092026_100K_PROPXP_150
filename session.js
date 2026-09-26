@@ -186,7 +186,7 @@ export const SPECS = {
   'US100': spec({ contract:    1, digits: 2, valuta: 'USD', volMin: 0.01, volMax: 50, volStep: 0.01 }),
   'GER40': spec({ contract:    1, digits: 2, valuta: 'EUR', volMin: 0.01, volMax: 50, volStep: 0.01 }),
   'UK100': spec({ contract:    1, digits: 2, valuta: 'GBP', volMin: 0.01, volMax: 50, volStep: 0.01 }),
-
+};
 /** Alleen de symbolen die deze firm daadwerkelijk gebruikt. De opstartcontrole
  *  liep eerst over ALLE specs heen, inclusief die van een andere firm — vandaar
  *  de "US100.cash niet gevonden" ruis bij FundedNext. */
