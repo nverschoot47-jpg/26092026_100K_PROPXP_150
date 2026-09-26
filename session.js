@@ -187,21 +187,6 @@ export const SPECS = {
   'GER40': spec({ contract:    1, digits: 2, valuta: 'EUR', volMin: 0.01, volMax: 50, volStep: 0.01 }),
   'UK100': spec({ contract:    1, digits: 2, valuta: 'GBP', volMin: 0.01, volMax: 50, volStep: 0.01 }),
 
-  // ── Vantage — afgelezen uit het MT5 symbool-informatiescherm ─────────────
-  XAGUSD:   spec({ contract: 5000, digits: 3, valuta: 'USD', volMin: 0.01, volMax:  20, volStep: 0.01 }),
-  NAS100:   spec({ contract:    1, digits: 2, valuta: 'USD', volMin: 0.10, volMax: 500, volStep: 0.10 }),
-  'CL-OIL': spec({ contract: 1000, digits: 3, valuta: 'USD', volMin: 0.01, volMax:  20, volStep: 0.01 }),
-  BTCUSD:   spec({ contract:    1, digits: 2, valuta: 'USD', volMin: 0.01, volMax: 100, volStep: 0.01 }),
-  ETHUSD:   spec({ contract:    1, digits: 2, valuta: 'USD', volMin: 0.01, volMax: 100, volStep: 0.01 }),
-  XRPUSD:   spec({ contract: 10000, digits: 4, valuta: 'USD', volMin: 0.01, volMax: 100, volStep: 0.01 }),
-  SOLUSD:   spec({ contract:   10, digits: 2, valuta: 'USD', volMin: 0.01, volMax: 100, volStep: 0.01 }),
-  GER40:    spec({ contract:    1, digits: 2, valuta: 'EUR', volMin: 0.10, volMax: 500, volStep: 0.10 }),
-  UK100:    spec({ contract:    1, digits: 2, valuta: 'GBP', volMin: 0.10, volMax: 500, volStep: 0.10 }),
-
-  // ── FundedNext — historisch ──────────────────────────────────────────────
-  NDX100:   spec({ contract:    1, digits: 2, valuta: 'USD', volMin: 0.01, volMax:  40, volStep: 0.01 }),
-};
-
 /** Alleen de symbolen die deze firm daadwerkelijk gebruikt. De opstartcontrole
  *  liep eerst over ALLE specs heen, inclusief die van een andere firm — vandaar
  *  de "US100.cash niet gevonden" ruis bij FundedNext. */
