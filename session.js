@@ -183,9 +183,9 @@ export const SPECS = {
   // je lotgrootte. Zit die factor er 10x naast, dan staat er 10x te veel of te
   // weinig op tafel zonder dat iets alarm slaat.
   XAUUSD:       spec({ contract:  100, digits: 2, valuta: 'USD', volMin: 0.01, volMax:  100, volStep: 0.01 }),
-  'US100.cash': spec({ contract:    1, digits: 2, valuta: 'USD', volMin: 0.01, volMax: 1000, volStep: 0.01 }),
-  'GER40.cash': spec({ contract:    1, digits: 2, valuta: 'EUR', volMin: 0.01, volMax: 1000, volStep: 0.01 }),
-  'UK100.cash': spec({ contract:    1, digits: 2, valuta: 'GBP', volMin: 0.01, volMax: 1000, volStep: 0.01 }),
+  'US100': spec({ contract:    1, digits: 2, valuta: 'USD', volMin: 0.01, volMax: 1000, volStep: 0.01 }),
+  'GER40': spec({ contract:    1, digits: 2, valuta: 'EUR', volMin: 0.01, volMax: 1000, volStep: 0.01 }),
+  'UK100: spec({ contract:    1, digits: 2, valuta: 'GBP', volMin: 0.01, volMax: 1000, volStep: 0.01 }),
 
   // ── Vantage — afgelezen uit het MT5 symbool-informatiescherm ─────────────
   XAGUSD:   spec({ contract: 5000, digits: 3, valuta: 'USD', volMin: 0.01, volMax:  20, volStep: 0.01 }),
